@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizony.com - Women Quizes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/mediaQuires.css">
+
+    <body>
+        <nav id="navbar">
+            <a href=""><img src="img/logo.png" alt="loading image"></a>
+            <ul id="navigation-">
+                <div class="category">
+                    <li><a href="">Categories</a></li>
+                    <div class="categories-lists">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h3>Quizzes</h3>
+                                    </th>
+                                    <th>
+                                        <h3>Stories</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="">All</a></td>
+                                    <td><a href="">All</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Top</a></td>
+                                    <td><a href="">Horror</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Users Quizzes</a></td>
+                                    <td><a href="">Action</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="/">Women</a></td>
+                                    <td><a href="">Poetry</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Couples</a></td>
+                                    <td><a href="">Fantasy</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Trivia</a></td>
+                                    <td><a href="">Romance</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Sport</a></td>
+                                    <td><a href="">Adventure</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Music</a></td>
+                                    <td><a href="">Humor</a></td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h3>Popular Tags</h3>
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="">Girls</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Freinds</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Fun</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Love</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Lifestyle</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Food</a></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="create">
+                    <li><a href="">Create</a></li>
+                    <div class="create-list">
+                        <a href="">Create Quiz</a>
+                        <a href="">Create Story</a>
+                        <a href="">How It Works</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <li><a href="">Waiting Room</a></li>
+                <li><a href="">Our Story</a></li>
+                <li> <a href=""><i class="fas fa-search searchmenu"></i></a></li>
+            </ul>
+            <ul id="loginmenu">
+                <div class="signup-form">
+                    <li><a onclick="openSignupForm()" href="javascript:void(0);">Sign Up</a></li>
+                </div>
+                <div class="PopUp-signup" id="SignUpForm">
+                    <form action="" class="form-Box">
+                        <h1>Sign Up</h1>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email">
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw">
+                        <label for="psw"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Enter Password Again" name="psw">
+
+                        <button type="submit" class="btn">Sign Up</button>
+                        <button type="submit" class="btn cancel" onclick="closeSignupForm()">Close</button>
+                    </form>
+                </div>
+                <li><a onclick="openloginForm()" class="login-form" href="javascript:void(0);">Log in</a></li>
+                <div class="PopUp-login" id="LoginForm">
+                    <form action="" class="form-Box">
+                        <h1>Login</h1>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email">
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw">
+                        <button type="submit" class="btn">Login</button>
+                        <button type="submit" class="btn cancel" onclick="closeloginForm()">Close</button>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+        <nav class="new-menu">
+            <a href=""><img src="img/logo.png" alt="loading image"></a>
+            <a onclick="openmenu()" href="javascript:void(0);"><i class="fas fa-bars fa-2x h-menu"></i></a>
+            <div id="hamburger-menu">
+                <ul id="navigation-">
+                    <div class="category">
+                        <li><a href="">Categories</a></li>
+                        <div class="categories-lists">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h3>Quizzes</h3>
+                                        </th>
+                                        <th>
+                                            <h3>Stories</h3>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">All</a></td>
+                                        <td><a href="">All</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Top</a></td>
+                                        <td><a href="">Horror</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Users Quizzes</a></td>
+                                        <td><a href="">Action</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/">Women</a></td>
+                                        <td><a href="">Poetry</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Couples</a></td>
+                                        <td><a href="">Fantasy</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Trivia</a></td>
+                                        <td><a href="">Romance</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Sport</a></td>
+                                        <td><a href="">Adventure</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Music</a></td>
+                                        <td><a href="">Humor</a></td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <h3>Popular Tags</h3>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">Girls</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Freinds</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Fun</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Love</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Lifestyle</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="">Food</a></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="create">
+                        <li><a href="">Create</a></li>
+                        <div class="create-list">
+                            <a href="">Create Quiz</a>
+                            <a href="">Create Story</a>
+                            <a href="">How It Works</a>
+                            <a href="">FAQ</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </div>
+                    <li><a href="">Waiting Room</a></li>
+                    <li><a href="">Our Story</a></li>
+                    <li> <a href=""><i class="fas fa-search searchmenu"></i></a></li>
+                </ul>
+                <ul id="loginmenu">
+                    <div class="signup-form">
+                        <li><a onclick="openSignupForm()" href="">Sign Up</a></li>
+                    </div>
+                    <div class="PopUp-signup" id="SignUpForm">
+                        <form action="" class="form-Box">
+                            <h1>Sign Up</h1>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email">
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw">
+                            <label for="psw"><b>Confirm Password</b></label>
+                            <input type="password" placeholder="Enter Password Again" name="psw">
+
+                            <button type="submit" class="btn">Sign Up</button>
+                            <button type="submit" class="btn cancel" onclick="closeSignupForm()">Close</button>
+                        </form>
+                    </div>
+                    <li><a onclick="openloginForm()" class="login-form" href="">Log in</a></li>
+                    <div class="PopUp-login" id="LoginForm">
+                        <form action="" class="form-Box">
+                            <h1>Login</h1>
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email">
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw">
+                            <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn cancel" onclick="closeloginForm()">Close</button>
+                        </form>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <div class="container">
+            <div class="contents">
+                <div id="posts">
+                    <h1>Quizzes For Women</h1>
+                    <div class="article-content">
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz1pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">1 month ago</div>
+                                </div>
+                                <h5>What's My Aesthetic</h5>
+                                <p>What is my aesthetic? Answer now and our aesthetic finder will tell you whether you're glam, spoo..</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 475</span>
+                                <span><i class="far fa-thumbs-up"></i>500</span>
+                                <span><i class="fas fa-user-alt"></i> josh</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz2pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">3 month ago</div>
+                                </div>
+                                <h5>Are You A Country Girl Or A City Girl?</h5>
+                                <p>This quiz will prove if you are a true Country Girl or a true City Girl.</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 5875</span>
+                                <span><i class="far fa-thumbs-up"></i>800</span>
+                                <span><i class="fas fa-user-alt"></i> kriemer</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz3pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">5 month ago</div>
+                                </div>
+                                <h5>Can We Guess Your Age?</h5>
+                                <p>It is getting increasingly challenging to distinguish people's age in today's times. Children are...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 875</span>
+                                <span><i class="far fa-thumbs-up"></i>958</span>
+                                <span><i class="fas fa-user-alt"></i> eden</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz4pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">5 month ago</div>
+                                </div>
+                                <h5>What Should I Wear Today?</h5>
+                                <p>No two human being are alike. We all have unique style and swagger that sets us apart from one...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 5875</span>
+                                <span><i class="far fa-thumbs-up"></i>1200</span>
+                                <span><i class="fas fa-user-alt"></i> lyn</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz5pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">9 month ago</div>
+                                </div>
+                                <h5>Are You A Real Witch?</h5>
+                                <p>Are you a real witch? Practicing magic and harnessing the power of the stars takes patience and ...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 4875</span>
+                                <span><i class="far fa-thumbs-up"></i>2558</span>
+                                <span><i class="fas fa-user-alt"></i> jenifer</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz6pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">10 month ago</div>
+                                </div>
+                                <h5>What Haircut Suits You Best?</h5>
+                                <p>Are you thinking of changing your hairstyle? You could end up wearing your bad decision on your h...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 4587</span>
+                                <span><i class="far fa-thumbs-up"></i>2587</span>
+                                <span><i class="fas fa-user-alt"></i> spohie</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz7pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">1 Year ago</div>
+                                </div>
+                                <h5>What Should Be Your Wedding Style?</h5>
+                                <p>You have spent your whole life thinking about what your wedding will be like...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 52480</span>
+                                <span><i class="far fa-thumbs-up"></i>4100</span>
+                                <span><i class="fas fa-user-alt"></i> Jamia</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz8pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">1 Year ago</div>
+                                </div>
+                                <h5>How Fashionable Am I?</h5>
+                                <p>Do you know the latest trends for 2020? Do you have a great sense of fashion? If so, take this...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 62485</span>
+                                <span><i class="far fa-thumbs-up"></i>1500</span>
+                                <span><i class="fas fa-user-alt"></i> cherry</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz9pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">2 Years ago</div>
+                                </div>
+                                <h5>Are You A Tomboy?</h5>
+                                <p>Are you a tomboy? For those who don't know what tomboys are. These are girls who like to do what...</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 75875</span>
+                                <span><i class="far fa-thumbs-up"></i>5547</span>
+                                <span><i class="fas fa-user-alt"></i> Luuno</span>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="article">
+                                <div class="quiz">
+                                    <img src="img/quiz10pic.jpg" alt="">
+                                    <div class="text">Quiz</div>
+                                    <div class="timeago">2 years ago</div>
+                                </div>
+                                <h5>What Type of Girl Am I?</h5>
+                                <p>What type of girl are you? Are you a diva, Girly Girl or a Tomboy? Find our here the best match of....</p>
+                            </div>
+                            <div class="views">
+                                <span><i class="fas fa-list-ul"></i></span>
+                                <span><i class="fas fa-eye"></i> 85947</span>
+                                <span><i class="far fa-thumbs-up"></i>7500</span>
+                                <span><i class="fas fa-user-alt"></i> Avan</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="aside">
+                    <div id="options">
+                        <ul->
+                            <li class="options-all"><a href=""> All</a></li>
+                            <hr>
+                            <li><a href="">Quizzes</a></li>
+                            <hr>
+                            <li><a href="">Stories</a></li>
+                            <hr>
+                            <li><a href="">Top Quizzes</a></li>
+                            <hr>
+                            <li><a href="">Waiting Room</a></li>
+                        </ul->
+                    </div>
+                    <div class="categories">
+                        <h2>Quiz Categories</h2>
+                        <div class="category-name">
+                            <table>
+                                <tr>
+                                    <td class="category-women">
+                                        <a href="">
+                                        Women
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Men
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Couples
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Adults
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                       Kids
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Living
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                       Personality
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Hobby
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                        Relationship
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                       Animals
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Travel
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Film
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                        Politics
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                       History
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Sport
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Girls
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                        Trivia
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Health
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Teens
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Food
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                       Music
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Technology
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Education
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        likes
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                        Career
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Entertainment
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                        Mood
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                       Other
+                                        </a>
+                                    </td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="categories">
+                            <h2>Top Quizes</h2>
+                            <div class="top-quizes">
+                                <a href="">
+                                    <span><img src="https://source.unsplash.com/1600x900/?nature,water" alt=""></span>
+                                    <p>What Nature does for us?</p>
+                                </a>
+                            </div>
+                            <div class="top-quizes">
+                                <a href="">
+                                    <span><img src="https://source.unsplash.com/1600x900/?celebrity,actor" alt=""></span>
+                                    <p>Which Famous Person Are You Like Most?</p>
+                                </a>
+                            </div>
+                            <div class="top-quizes">
+                                <a href="">
+                                    <span><img src="https://source.unsplash.com/1600x900/?sports,sports" alt=""></span>
+                                    <p>What Hobby Should You Try Next?</p>
+                                </a>
+                            </div>
+                            <div class="top-quizes">
+                                <a href="">
+                                    <span><img src="https://source.unsplash.com/1600x900/?talent,specialist" alt=""></span>
+                                    <p>What Is Your Talent?</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <h2>Story genres</h2>
+                            <div class="category-name">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <a href="">
+                                        Action
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Adventure
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Romance
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Long
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="">
+                                       Historical
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Horror
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                       Humor
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Mystery
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="">
+                                        Nonfiction
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                       Poetry
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                       Realistic
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Fantasy
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="">
+                                        Fanfiction
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                       Thriller
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                        Challenge
+                                        </a>
+                                        </td>
+                                        <td>
+                                            <a href="">
+                                       Short Stories
+                                        </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-btn">
+                        <button>Create Story</button>
+                    </div>
+                    <div class="categories">
+                        <h2>Popular Tags</h2>
+                        <div class="category-name">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                    Girls
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                    Friends
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                    Funs
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Teens
+                                    </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                   Love
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                    Personality
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Food
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                    History
+                                    </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                   Name
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Generator
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                  Character
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                    Lifestyle
+                                    </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                    Religion
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Music
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Style
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                  Animals
+                                    </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                    Knowledge   
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Pets
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Tradition
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                  Life
+                                    </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="">
+                                    Culture
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                  Liferature
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                   Fashion
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <a href="">
+                                  Family
+                                    </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer id="footer">
+            <hr>
+            <div id="links">
+                <span><a href="">Home</a></span> | <span><a href="">Advertise</a></span> | <span><a href="">Contact</a></span> | <span><a href="">About</a></span> | <span><a href="">Privacy Policy</a></span> | <span><a href="">Cookie Policy</a></span>
+            </div>
+            <div id="copyright">
+                <p><span><a href="">quizony.com</a>
+                </span>&copy; 2021 All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="javascript/index.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0px 5vw;
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+}
+
+
+/* Navigation bar style */
+
+#navbar {
+    display: flex;
+    /* margin: 13px 0px; */
+    position: sticky;
+    top: 0;
+    background-color: rgb(236, 236, 236);
+    z-index: 15;
+}
+
+#navbar img {
+    width: 12vw;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 9px 12px;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+.category {
+    position: relative;
+    display: inline-block;
+}
+
+.categories-lists {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.categories-lists a {
+    color: black;
+    padding: 2px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.category:hover .categories-lists {
+    display: block;
+}
+
+.create {
+    position: relative;
+    display: inline-block;
+}
+
+.create-list {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.create-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.create-list a:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.create:hover .create-list {
+    display: block;
+}
+
+.signup-form {
+    font-weight: bold;
+}
+
+.PopUp-signup {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 100px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-Box h1 {
+    text-align: center;
+}
+
+.form-Box {
+    max-width: 40vw;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-Box input[type=text],
+.form-Box input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-Box input[type=text]:focus,
+.form-Box input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-Box .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-Box .cancel {
+    background-color: red;
+}
+
+.form-Box .btn:hover {
+    opacity: 1;
+}
+
+.PopUp-login {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 100px;
+    border: 3px solid #f1f1f1;
+    z-index: 10;
+}
+
+
+/* contents style starts from here */
+
+.contents {
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 'posts posts posts aside';
+}
+
+#posts {
+    grid-area: posts;
+}
+
+#aside {
+    grid-area: aside;
+}
+
+#options {
+    border: 1.5px solid rgb(202, 202, 202);
+    box-shadow: 5px 6px 10px 2px rgb(238, 236, 236), -5px -6px 10px 2px rgb(238, 236, 236)
+}
+
+#options li {
+    list-style: none;
+    text-align: center;
+    padding: 9px 0px;
+}
+
+#options li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2px 52px;
+    color: black;
+}
+
+.options-all {
+    background-color: rgb(240, 238, 238);
+}
+
+.article-content {
+    display: flex;
+}
+
+.article {
+    max-width: 25vw;
+    margin: 10px;
+    border: 1px solid rgb(202, 202, 202);
+    box-shadow: 5px 6px 10px 2px rgb(238, 236, 236), -5px -6px 10px 2px rgb(238, 236, 236)
+}
+
+.contents h1 {
+    text-align: center;
+}
+
+.quiz {
+    position: relative;
+}
+
+.quiz img {
+    width: 25vw;
+    height: 40vh;
+}
+
+.text {
+    position: absolute;
+    background-color: rgb(0, 202, 0);
+    color: white;
+    opacity: .68;
+    padding: 3px 5px;
+    top: 8px;
+    left: 20vw;
+}
+
+.timeago {
+    position: absolute;
+    background-color: white;
+    opacity: .68;
+    padding: 3px 5px;
+    color: black;
+    bottom: 8px;
+    left: 5px;
+}
+
+.article h5 {
+    color: black;
+    padding: 13px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.article p {
+    color: grey;
+    font-size: 1.05rem;
+    text-align: center;
+    padding: 2px 25px;
+}
+
+.views {
+    max-width: 25vw;
+    padding: 2px 23px;
+    text-align: center;
+}
+
+.views span {
+    color: grey;
+    margin: 0px 3px;
+}
+
+.categories {
+    margin-top: 60px;
+}
+
+.categories h2 {
+    text-align: center;
+    margin: 8px 0px;
+}
+
+.category-name {
+    box-shadow: 5px 6px 10px 2px rgb(238, 236, 236), -5px -6px 10px 2px rgb(238, 236, 236);
+}
+
+.category-name table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.category-name td {
+    border: 1px solid rgb(202, 202, 202);
+    text-align: center;
+    font-size: 1.1em;
+    padding: 5px 2px;
+}
+
+.category-name td a {
+    color: black;
+}
+
+.category-women {
+    font-weight: bold;
+    background-color: rgb(212, 212, 212);
+}
+
+td:hover {
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+.top-quizes a {
+    box-shadow: 5px 6px 10px 2px rgb(238, 236, 236), -5px -6px 10px 2px rgb(238, 236, 236);
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.top-quizes p {
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+.top-quizes img {
+    height: 14vh;
+    width: 13vw;
+}
+
+.story-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6em 0px;
+}
+
+.story-btn button {
+    font-size: 2em;
+    text-align: center;
+    padding: 5px 22px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(202, 25, 202);
+}
+
+.story-btn button:hover {
+    cursor: pointer;
+    background-color: purple;
+}
+
+#footer {
+    margin-top: 12px;
+    text-align: center;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 5px;
+}
+
+#links a {
+    color: rgb(44, 174, 255);
+    padding: 0px 22px;
+    font-size: 1.2em;
+}
+
+#links a:hover {
+    color: rgb(103, 103, 255);
+    text-decoration: underline;
+}
+
+#copyright {
+    margin-bottom: 32px;
+    font-size: 1.2em;
+}
+
+#copyright a {
+    color: rgb(44, 174, 255);
+}
+
+#copyright a:hover {
+    color: rgb(103, 103, 255);
+    text-decoration: underline;
+}
+
+#copyright p {
+    color: grey;
+}
